@@ -85,7 +85,7 @@ h3 {
     height: 150px !important;
 }
 .certificates .card{
-    width:290px !important;
+    width:100% !important;
 }
 /* Position navigation buttons beside the projects */
 .owl-carousel {
@@ -163,5 +163,8 @@ h3 {
 
     .projects .card {
         width:400px !important;
+    }
+    .certificates .card{
+        width: 300px !important;
     }
 }
