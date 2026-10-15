@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(5, 54, 52) !important;
+    font-family: 'Raleway', sans-serif !important;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 36px;
+    color: rgb(5, 54, 52);
+}
+
+h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 600;
+    font-size: 68px;
+    line-height: 82px;
+    color: rgb(5, 54, 52);
+}
+
+h2,
+h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 35px;
+}
+
+.light {
+    background-color: #F8F6F1;
+}
+
+.dark {
+    background-color: #F0F1EA;
+}
+
+.aboutback {
+    background-image: linear-gradient(rgba(118, 116, 116, 0.9), rgba(100, 97, 97, 0.9)), url(../Images/Background/aboutback.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+.card {
+    border: 2px solid;
+}
+
+.skills img {
+    height:80px;
+    width: 80px;
+}
+.projects img{
+    height:180px !important;
+}
+.certificatebtn{
+    background-color: #F0F1EA ;
+}
+.certificates img{
+    height: 150px !important;
+}
+.certificates .card{
+    width:290px !important;
+}
+/* Position navigation buttons beside the projects */
+.owl-carousel {
+    position: relative;
+}
+
+.owl-carousel .owl-nav {
+    position: absolute;
+    top: 50%;
+    left:-60px;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(-50%);
+    pointer-events: none;
+    margin: 0;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    background: rgb(5, 54, 52) !important;
+    color: #fff !important;
+    border-radius: 50%;
+    font-size: 26px !important;
+    pointer-events: auto;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    transform: translateX(-50%);
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    transform: translateX(50%);
+}
+
+.owl-carousel .owl-nav button span {
+    line-height: 1;
+}
+@media(min-width:768px) {
+    .aboutback {
+        height: auto;
+    }
+
+    .quickfacts {
+        margin-top: 350px !important;
+    }
+
+    .card {
+        width: 330px !important;
+    }
+    .skills .card{
+        width:280px !important;;
+    }
+    .projects .card {
+        width:300px !important;
+    }
+}
+
+@media(min-width:991px) {
+    h1 {
+        font-size: 120px;
+        line-height: 120px;
+    }
+
+    .quickfacts {
+        margin-top: 150px !important;
+    }
+
+    .projects .card {
+        width:400px !important;
+    }
+}
